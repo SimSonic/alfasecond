@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  alfasecond:
+    image: lampa/alfasecond:2.0
+    ports:
+      - 8081:8081
+    command: ["java", "-jar", "second-0.0.1.jar",
+              "kafka.server=178.154.246.176:29092"]
